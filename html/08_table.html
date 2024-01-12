@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      table {
+        width: 100%;
+      }
+      /* th {
+        border: 1px solid black;
+      }
+      td {
+        border: 1px solid black;
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- 표: table -->
+    <!-- 행: tr-->
+    <!-- 셀: td(데이터), th(열 제목) -->
+    <!-- thead: 제목이 들어가는 모든 tr태그 -->
+    <!-- tbody: 데이터가 들어가는 모든 tr태그 -->
+    <table>
+      <thead>
+        <tr>
+          <th>이름</th>
+          <th>연락처</th>
+          <th>특기</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>예지</td>
+          <td>000-0000-0000</td>
+          <td>귀여움</td>
+        </tr>
+        <tr>
+          <td>류진</td>
+          <td>000-0000-0000</td>
+          <td>춤</td>
+        </tr>
+        <tr>
+          <td>유나</td>
+          <td>000-0000-0000</td>
+          <td>노래</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <table>
+      <thead>
+        <tr>
+          <th>학년</th>
+          <th>반</th>
+          <th>학생 수</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="3">1학년</td>
+          <td>1반</td>
+          <td>18명</td>
+        </tr>
+        <tr>
+          <!-- <td>1학년</td> -->
+          <td>2반</td>
+          <td>20명</td>
+        </tr>
+        <tr>
+          <!-- <td>1학년</td> -->
+          <td>3반</td>
+          <td>22명</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">합계</td>
+          <!-- <td></td> -->
+          <td>60명</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
