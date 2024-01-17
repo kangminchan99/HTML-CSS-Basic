@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="">살고있는 지역?</label>
+    <select name="" id="">
+      <option value="02">seoul</option>
+      <option value="051">busan</option>
+      <option value="064">jeju</option>
+    </select>
+    <br />
+    <select name="" id="" multiple>
+      <option value="02">seoul</option>
+      <option value="051">busan</option>
+      <option value="064">jeju</option>
+    </select>
+    <br />
+    <select name="" id="">
+      <option value="man">man</option>
+      <option value="femail">femail</option>
+    </select>
+    <br />
+    <div>
+      <input type="radio" name="radio_gender" id="male" />
+      <label for="male">man</label>
+      <input type="radio" name="radio_gender" id="femail" />
+      <label for="femail">femail</label>
+    </div>
+    <div>
+      <textarea name="" id="" style="width: 100%" rows="10"></textarea>
+    </div>
+    <br />
+    <div>
+      <fieldset>
+        <legend>개인정보</legend>
+        <div>
+          <label for="name">name</label>
+          <input type="text" name="" id="name" />
+        </div>
+        <br />
+        <div>
+          <label for="tel">연락처</label>
+          <input type="tel" name="" id="tel" />
+        </div>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>대학교</legend>
+        <div>
+          <label for="university">university</label>
+          <input type="text" name="" id="university" />
+        </div>
+        <br />
+        <div>
+          <label for="year">졸업년도</label>
+          <input type="tel" name="" id="year" />
+        </div>
+      </fieldset>
+    </div>
+    <br />
+    <h1>DataList</h1>
+    <div>
+      <input list="member" id="member1" />
+      <datalist id="member">
+        <option value="yeji">ITZY</option>
+        <option value="yuna">ITZY</option>
+        <option value="charyung">ITZY</option>
+        <option value="ryujin">ITZY</option>
+        <option value="lia">ITZY</option>
+      </datalist>
+    </div>
+    <br />
+    <div>
+      <input list="member" id="member2" />
+    </div>
+  </body>
+</html>
