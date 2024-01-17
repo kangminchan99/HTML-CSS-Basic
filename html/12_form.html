@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- action - 데이터를 전송할 주소 -->
+    <!-- method - 데이터를 전송할 방법 -->
+    <!-- get - 전송하는 데이터가 url에 붙어서 간다. 전송하는 데이터가 url에 노출(보안 취약)
+         페이지 주소를 공유 해야 할 때 사용 -->
+    <!-- url에 데이터를 붙여서 보내니까 전솔할 수 있는 데이터 크기에 제약 -->
+
+    <!-- post - 전송하는 데이터가 url에 붙지 않음. -->
+    <!-- 사용자 눈에 보이지 않기 때문에 보안에 좋음 -->
+    <!-- 개발자도구를 사용해서 확인 가능하지만 암호화하는것이 좋다. -->
+    <!-- https프로토콜을 사용하면 암호화가 된다. -->
+    <!-- 전송할 수 있는 데이터의 크기에 제약 x -->
+
+    <!-- target="_self" : 데이터를 전솔할 창을 어디로 할건가?  -->
+    <!-- target="_self" : 자기 자신 창 -->
+    <!-- target="_blank" : 새 창(새 탭) -->
+    <!-- _parent, _top -->
+    <!-- novalidate : form 태그 안의 input요소의 정합성을 체크하지 않는다 ==  formnovalidate="formnovalidate" -->
+    <form action="서버 주소" method="get" target="_self" novalidate>
+      <div>
+        <label for="">name </label>
+        <input type="text" name="name" id="name" autocomplete="on" />
+      </div>
+      <br />
+      <div>
+        <label for="tel">연락처</label>
+        <input type="tel" name="tel" id="tel" />
+      </div>
+      <br />
+      <div>
+        <label for="email">email</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <br />
+      <button type="submit">submit</button>
+      <!-- <button type="submit" formnovalidate="formnovalidate">submit</button> -->
+    </form>
+  </body>
+</html>
