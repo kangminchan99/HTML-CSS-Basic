@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 가상 클래스 */
+      a {
+        text-decoration: none;
+      }
+
+      button:hover {
+        color: white;
+        background: gray;
+      }
+
+      /* 마우스가 a태그 위에 올라올 때  */
+      a:hover {
+        color: yellow;
+        background-color: blue;
+      }
+      /* 방문한 적이 없는 링크 */
+      a:link {
+        color: blue;
+      }
+
+      /* 방문한 적이 있는 링크 */
+      a:visited {
+        color: green;
+      }
+
+      /* 마우스가 포커스 됐을 때 */
+      input:focus {
+        border: 5px solid red;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      table {
+        width: 100%;
+      }
+
+      /*  */
+      tbody > tr:nth-child(odd) {
+        background-color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://naver.com">naver</a>
+    <a href="https://google.com">google</a>
+    <a href="https://kasmdlkasmdlkm.com">fake site</a>
+    <br />
+    <button>save</button>
+    <br />
+    <input type="text" name="" id="" />
+    <br />
+    <table>
+      <thead>
+        <tr>
+          <th>name</th>
+          <th>address</th>
+          <th>email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>yeji</td>
+          <td>000-0000-0000</td>
+          <td>yeji.gmail.com</td>
+        </tr>
+        <tr>
+          <td>yuna</td>
+          <td>000-1230-0000</td>
+          <td>yuna.gmail.com</td>
+        </tr>
+        <tr>
+          <td>lia</td>
+          <td>000-3450-0000</td>
+          <td>lia.gmail.com</td>
+        </tr>
+        <tr>
+          <td>ryujin</td>
+          <td>000-9043200-0000</td>
+          <td>ryujin.gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
