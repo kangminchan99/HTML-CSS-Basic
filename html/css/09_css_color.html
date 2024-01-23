@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- CSS 색상 적용 방법 -->
+    <!-- 1. 색상명에 해당하는 키워드 사용 -->
+    <h1 style="background-color: blue">파란색 배경색 적용</h1>
+    <p style="color: orange">오렌지 색 글씨 적용</p>
+
+    <!-- 2. 색상값 사용 -->
+    <!-- RGB값 0~255 -->
+    <h1 style="color: rgb(255, 0, 0)">red</h1>
+    <h1 style="color: rgb(0, 255, 0)">green</h1>
+    <h1 style="color: rgb(0, 0, 255)">blue</h1>
+    <h1 style="color: rgb(196, 161, 48)">yeji</h1>
+
+    <!-- 2-1. RGBA - A(Alpha):투명도 -->
+    <h1 style="color: rgba(255, 0, 0, 0.5)">red rgba</h1>
+
+    <!-- 3. HEX 색상값 -->
+    <!-- 16진수 표기법, 광원(빛의 3원색인) red, green, blue의 조합으로 표기 -->
+    <!-- 0 -> HEX '00' -->
+    <!-- 255 -> HEX 'FF' -->
+    <h1 style="color: #ff0000">red hex</h1>
+    <h1 style="color: #00ff00">green hex</h1>
+    <h1 style="color: #0000ff">blue hex</h1>
+    <h1 style="color: #000000">black hex</h1>
+    <h1 style="color: #6992d1">yeji hex</h1>
+
+    <!-- 4. HSL 값 -->
+    <!-- 색조(hue), 채도(saturation), 밝기(lightness) 3가지 값으로 구성 -->
+    <!-- 색조: 0 ~360, 360(red), 120(green), 240(blue) -->
+    <!-- 채도: 0~100%, 0% 회색 음영 -->
+    <!-- 밝기: 0~100%, 100% 가장 밝은 값 -->
+    <h1 style="color: hsl(360, 100%, 50%)">red hsl</h1>
+    <h1 style="color: hsl(120, 100%, 50%)">green hsl</h1>
+    <h1 style="color: hsl(240, 100%, 50%)">blue hsl</h1>
+
+    <!-- HSLA(ALPHA) -->
+    <h1 style="background-color: hsla(9, 100%, 64%, 0.4)">yeji hsla</h1>
+  </body>
+</html>
