@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      /* .table {
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      .table tr th,
+      .table tr td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      .striped-table tbody tr:nth-child(even) {
+        background-color: aquamarine;
+      } */
+      .table {
+        border: 1px solid black;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- CSS를 적용하는 방법 3가지 -->
+    <!-- 1: inline style: html 시작 태그에 style속성 적용 -->
+    <!-- 2: internal css: head 태그안에 <style>태그에 스타일 지정 -->
+    <!-- 3: external css: 별도의 css 파일을 만들고 <head> 태그 안에 css파일을 삽입해서 사용 -->
+    <a href="" style="text-decoration: none">yeji</a>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>name</th>
+          <th>address</th>
+          <th>email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>yeji</td>
+          <td>000-0000-0001</td>
+          <td>yeji.gamil.com</td>
+        </tr>
+        <tr>
+          <td>yuna</td>
+          <td>000-0000-0002</td>
+          <td>yuna.gamil.com</td>
+        </tr>
+        <tr>
+          <td>ryujin</td>
+          <td>000-0000-0003</td>
+          <td>ryujin.gamil.com</td>
+        </tr>
+        <tr>
+          <td>lia</td>
+          <td>000-0000-0004</td>
+          <td>lia.gamil.com</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <table class="table striped-table">
+      <thead>
+        <tr>
+          <th>name</th>
+          <th>address</th>
+          <th>email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>yeji</td>
+          <td>000-0000-0001</td>
+          <td>yeji.gamil.com</td>
+        </tr>
+        <tr>
+          <td>yuna</td>
+          <td>000-0000-0002</td>
+          <td>yuna.gamil.com</td>
+        </tr>
+        <tr>
+          <td>ryujin</td>
+          <td>000-0000-0003</td>
+          <td>ryujin.gamil.com</td>
+        </tr>
+        <tr>
+          <td>lia</td>
+          <td>000-0000-0004</td>
+          <td>lia.gamil.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
