@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .table {
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      .table th,
+      .table td {
+        border: 1px solid black;
+      }
+
+      /* tbody 아래있는 tr태그를 찾아라  */
+      .table-striped > tbody > tr:nth-child(odd) {
+        background-color: aquamarine;
+      }
+
+      .table-hober > tbody > tr:hover {
+        background-color: yellow;
+      }
+
+      .table > tbody {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="table table-striped table-hober">
+      <thead>
+        <tr>
+          <th>yeji</th>
+          <th>lia</th>
+          <th>ryujin</th>
+          <th>ryung</th>
+          <th>yuna</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>yeji1</td>
+          <td>lia1</td>
+          <td>ryujin1</td>
+          <td>ryung1</td>
+          <td>yuna1</td>
+        </tr>
+        <tr>
+          <td>yeji2</td>
+          <td>lia2</td>
+          <td>ryujin2</td>
+          <td>ryung2</td>
+          <td>yuna2</td>
+        </tr>
+        <tr>
+          <td>yeji3</td>
+          <td>lia3</td>
+          <td>ryujin3</td>
+          <td>ryung3</td>
+          <td>yuna3</td>
+        </tr>
+        <tr>
+          <td>yeji4</td>
+          <td>lia4</td>
+          <td>ryujin4</td>
+          <td>ryung4</td>
+          <td>yuna4</td>
+        </tr>
+        <tr>
+          <td>yeji5</td>
+          <td>lia5</td>
+          <td>ryujin5</td>
+          <td>ryung5</td>
+          <td>yuna5</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
