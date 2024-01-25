@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        /* border: 3px solid red; = border-width, border-style, border-color */
+        border: 3px solid red;
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+      }
+
+      .dashed {
+        border-style: dashed;
+      }
+
+      .dotted {
+        border-style: dotted;
+      }
+
+      .solid {
+        border-style: solid;
+      }
+
+      .double {
+        border-style: double;
+      }
+
+      .groove {
+        border-style: groove;
+      }
+
+      .ridge {
+        border-style: ridge;
+      }
+
+      .inset {
+        border-style: inset;
+      }
+
+      .outset {
+        border-style: outset;
+      }
+
+      /* 두께 */
+      .thin {
+        border-width: thin;
+      }
+
+      .medium {
+        border-width: medium;
+      }
+
+      .thick {
+        border-width: thick;
+      }
+
+      .radius {
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- dashed: 테두리가 직사각형 여러개 -->
+    <div class="dashed">dashed</div>
+    <!-- dotted: 점선 -->
+    <div class="dotted">dotted</div>
+    <!-- solid: 직선 -->
+    <div class="solid radius">solid radius</div>
+    <div class="solid thick">solid thick</div>
+    <div class="solid thin">solid thin</div>
+    <div class="solid medium">solid medium</div>
+    <!-- double: 이중선  -->
+    <div class="double">double</div>
+    <!-- groove: 테두리가 파임 -->
+    <div class="groove">groove</div>
+    <!-- ridge: 테두리가 튀어나옴 -->
+    <div class="ridge">ridge</div>
+    <!-- inset: 요소가 파임 -->
+    <div class="inset">inset</div>
+    <!-- outset: 요소가 튀어나옴 -->
+    <div class="outset">outset</div>
+  </body>
+</html>
