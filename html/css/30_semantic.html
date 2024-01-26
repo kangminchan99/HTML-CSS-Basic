@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+      }
+      .header {
+        padding: 60px;
+        text-align: center;
+        background-color: purple;
+        font-style: italic;
+      }
+
+      .navbar {
+        display: flex;
+        flex-direction: row;
+        background-color: #333;
+        justify-content: center;
+        text-align: center;
+        position: sticky;
+        top: 0;
+      }
+
+      .navbar a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+      }
+
+      .navbar a:hover {
+        background-color: purple;
+        color: black;
+      }
+
+      .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .side {
+        flex: 30%;
+        background-color: #f1f1f1;
+        padding: 20px;
+      }
+
+      .img {
+        background: url("./img/yeji.jpeg");
+        background-size: contain;
+        width: 100%;
+        padding: 20px;
+        height: 200px;
+      }
+
+      .main {
+        flex: 70%;
+        background-color: white;
+        padding: 20px;
+      }
+
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background-color: #ddd;
+      }
+
+      @media screen and (max-width: 768px) {
+        .row,
+        .navbar {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- layout을 위한 시멘틱 태그 header-->
+    <!-- nav, aside, main -->
+    <header class="header">
+      <h1>ITZY YEJI</h1>
+    </header>
+    <nav class="navbar">
+      <a href="#1">YEJI</a>
+      <a href="#2">YUNA</a>
+      <a href="#3">LIA</a>
+      <a href="#4">RYUJIN</a>
+      <a href="#5">CHAERYEONG</a>
+    </nav>
+    <div class="row">
+      <aside class="side">
+        <div class="about">
+          <h2>About</h2>
+          <div class="img" style="height: 200px"></div>
+          <p>YEJI는 ITZY의 리더입니다.</p>
+          <h3>Skills</h3>
+          <p>노래, 춤, 애교, 리더쉽</p>
+          <div class="img" style="height: 60px"></div>
+          <br />
+          <div class="img" style="height: 60px"></div>
+          <br />
+          <div class="img" style="height: 60px"></div>
+        </div>
+      </aside>
+      <main class="main">
+        <section id="1">
+          <h2>YEJI</h2>
+          <h5>예지는 2000년 5월 26일생입니다.</h5>
+          <div class="img" style="height: 200px"></div>
+        </section>
+        <section id="2">
+          <h2>YEJI</h2>
+          <h5>
+            ITZY에서 리더를 맡고 있다. 연습생 시절 자신에게 주어진 일을 무슨
+            일이 있어도 끝까지 해내며, 중요한 시험 무대나 힘든 연습이 있을 땐
+            본인도 힘듦에도 불구하고 팀원들을 이끌고 통솔하는 능력이 뛰어났다고
+            한다.
+          </h5>
+          <div class="img" style="height: 200px"></div>
+        </section>
+        <section id="3">
+          <h2>YEJI</h2>
+          <h5>
+            팀을 통솔해야 할 순간에도 예지의 성격이 드러난다. 멤버들의 고민,
+            요구사항, 투정 등을 모두 받아주고 이들을 다독이면서 부드럽게
+            이끌어가는 모습을 종종 볼 수 있다.
+          </h5>
+          <div class="img" style="height: 200px"></div>
+        </section>
+        <section id="4">
+          <h2>YEJI</h2>
+          <h5>
+            그렇다고 해서 마냥 유순한 성격은 아니다. 순둥해 보이는 모습과는
+            다르게 내면이 굉장히 단단한 외유내강 스타일로 공식 무대 및 방송,
+            혹은 무대 리허설 등 팀을 대표해야 하는 자리에선 이따금씩 쭈뼛쭈뼛해
+            하는 여느 멤버들과는 달리 침착하고 당찬 모습을 드러낸다.
+          </h5>
+          <div class="img" style="height: 200px"></div>
+        </section>
+        <section id="5">
+          <h2>YEJI</h2>
+          <h5>
+            그룹을 대표하여 멘트를 진행해야 하는 경우라든지 촬영 및 리허설의
+            시작과 끝에서 제작진에게 부탁 인사를 해야 하는 경우 등에서는 그
+            누구보다도 위엄 있는 리더의 자세로 임한다.
+          </h5>
+          <div class="img" style="height: 200px"></div>
+        </section>
+      </main>
+    </div>
+    <div class="footer">
+      <h2>LEADER YEJI</h2>
+    </div>
+  </body>
+</html>
